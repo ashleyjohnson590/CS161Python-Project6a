@@ -1,0 +1,17 @@
+# Author:Ashley Johnson
+# Date: 10/22/2020
+# Description: Program takes a list of numbers as a parameter and then returns the median of those numbers.
+
+def find_median(some_nums):
+    """Finds the median of a list of numbers."""
+    some_nums.sort()
+    length = len(some_nums)
+    middle = length // 2
+    if length % 2 == 0:
+
+        median = (some_nums[middle] + some_nums[middle + 1]) / 2
+
+    else:
+        median = some_nums[middle]
+
+    return median
